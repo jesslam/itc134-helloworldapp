@@ -1,0 +1,22 @@
+{
+  "name": "itc134-helloworldapp",
+  "version": "1.0.0",
+  "description": "A MEAN application stack project for ITC 134",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesslam/itc134-helloworldapp.git"
+  },
+  "keywords": [
+    "itc134"
+  ],
+  "author": "Crystal, Dylan, Jessica, Rahel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesslam/itc134-helloworldapp/issues"
+  },
+  "homepage": "https://github.com/jesslam/itc134-helloworldapp#readme"
+}

@@ -1,8 +1,12 @@
 const express = require('express');
+var app = express();
 const mongoose = require('mongoose');
-//var http = require('http');
+//const http = require('http');
 
-http.createServer(function (req, res){
-    res.writeHead(200, {'Content-type': 'text/html'});
-    res.end('Hello World!');
-}).listen(3000);
+app.get('/', function (req, res){
+    res.send('<h1>Hello World!</h1>')
+    //res.send(200, {'Content-type': 'text/html'});
+    //res.end('Hello World!');
+    });
+
+app.listen(3000);

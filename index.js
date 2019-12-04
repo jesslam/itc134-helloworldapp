@@ -1,12 +1,14 @@
 const express = require('express');
-var app = express();
-const mongoose = require('mongoose');
+const app = express();
+const bodyparser = require('body-parser');
 //const http = require('http');
+//Import route
+const data = require('./routes/routes.js')
 
-app.get('/', function (req, res){
-    res.send('<h1>Hello World!</h1>')
-    //res.send(200, {'Content-type': 'text/html'});
-    //res.end('Hello World!');
-    });
+app.use('/data', data);
 
-app.listen(3000);
+let port = 3000;
+
+app.listen(port, () => {
+    console.log('Server is up and running on port number: ' + port);
+});

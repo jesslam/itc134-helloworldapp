@@ -1,10 +1,16 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-let DataSchema = new Schema({
-    greeting: {type: String, required: true, max: 100},
-    language: {type: String, required: true, max: 100},
+let Database = mongoose.model('Greetings',Schema({
+    _id : String,
+    greeting: String,
+    language: String,
+}));
 
-});
+//get database data
+Database.find();
+console.log(Database.find());
+
 //Export the model
-module.exports = mongoose.model('Data', DataSchema);
+module.exports = Database;
+console.log(module.exports);

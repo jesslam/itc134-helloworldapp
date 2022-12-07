@@ -21,7 +21,7 @@
   "homepage": "https://github.com/jesslam/itc134-helloworldapp#readme",
   "dependencies": {
     "angular": "^1.7.9",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.7.13"
   }
 }
